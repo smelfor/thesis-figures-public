@@ -1,0 +1,65 @@
+# Matplotlib style for scientific plotting
+# This is the base style for "SciencePlots"
+# see: https://github.com/garrettj403/SciencePlots
+
+# Set color cycle: blue, green, yellow, red, violet, gray
+axes.prop_cycle : cycler('color', ['CC6677', '332288', 'DDCC77', '117733', '88CCEE', '882255', '44AA99', '999933', 'AA4499', 'DDDDDD'])
+
+# Set x axis
+xtick.direction : in
+xtick.major.size : 3
+xtick.major.width : 0.5
+xtick.minor.size : 1.5
+xtick.minor.width : 0.5
+xtick.minor.visible : True
+xtick.labelsize : 10
+xtick.top : True
+
+# Set y axis
+ytick.direction : in
+ytick.major.size : 3
+ytick.major.width : 0.5
+ytick.minor.size : 1.5
+ytick.minor.width : 0.5
+ytick.minor.visible : True
+ytick.labelsize : 10
+ytick.right : True
+
+axes.labelsize: 15
+axes.titlesize: 15
+axes.edgecolor: "black"
+
+axes.grid: True
+grid.alpha: 0.4
+
+# Set line widths
+axes.linewidth : 0.5
+grid.linewidth : 0.5
+lines.linewidth : 1.
+
+# Remove legend frame
+legend.frameon : True
+legend.framealpha: 0.75
+legend.facecolor: "white"
+legend.edgecolor: None
+legend.borderpad: 0.15
+legend.labelspacing: 0.3
+legend.handletextpad: 0.5
+legend.handlelength: 1.6
+legend.handleheight: 0.25
+legend.fontsize : 10
+legend.title_fontsize : 11
+
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.05
+savefig.dpi : 600
+
+# Use serif fonts
+font.family : serif
+font.serif : Palatino
+mathtext.fontset : dejavuserif
+
+# Use LaTeX for math formatting
+text.usetex : True
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb}
